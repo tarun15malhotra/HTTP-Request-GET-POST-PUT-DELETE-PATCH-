@@ -19,6 +19,7 @@ it will effect and new record inserted each time
 
 
 # Difference between put and patch request
+==========================================
 
 1. Also, another difference is that when you want to update a resource with PUT request, you have to send the full payload as the 
 request whereas with PATCH, you only send the parameters which you want to update.
