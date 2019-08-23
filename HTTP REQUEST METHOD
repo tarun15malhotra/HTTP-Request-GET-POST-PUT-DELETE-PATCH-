@@ -1,0 +1,42 @@
+
+Get => fetch data from server
+Put => to update records
+Post => to create new record
+Delete => to delete existing record
+Patch =>  patch is used to update single field 
+
+get read only no change in the server database
+post put delete patch write request and change in the server
+
+put and patch is used for updating record
+post is to create new record 
+
+get put delete  safely repeated but post is not safly repeated. like if we send same request then there is no change in the response
+but in post every time a new record inserted in the database
+
+in case of get request if we refreshing page do not effect but if we refresh page in case of post the 
+it will effect and new record inserted each time
+
+
+# Difference between put and patch request
+
+1. Also, another difference is that when you want to update a resource with PUT request, you have to send the full payload as the 
+request whereas with PATCH, you only send the parameters which you want to update.
+
+Example:
+
+Suppose we have a resource that holds the first name and last name of a person.
+
+If we want to change the first name then we send a put request for Update
+
+{ "first": "Michael", "last": "Angelo" }
+Here, although we are only changing the first name, with PUT request we have to send both parameters first and last.
+In other words, it is mandatory to send all values again, the full payload.
+
+When we send a PATCH request, however, we only send the data which we want to update. In other words, we only send the first name to update, no need to send the last name.
+
+2. For this reason, PATCH request requires less bandwidth  as compare to put.
+
+Reference :
+
+https://www.youtube.com/watch?v=rhTkRK53XdQ
